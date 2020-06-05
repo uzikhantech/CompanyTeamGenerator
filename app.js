@@ -12,6 +12,7 @@ const render = require("./lib/htmlRenderer");
 
 const employees =[];
 
+//ask questions
 const managerQuestions = [
     {
         type: 'input',
