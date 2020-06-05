@@ -98,7 +98,7 @@ const internQuestions = [
 ];
 
 //create a new employee questions
-async function promptWantToAddEmployee() {
+async function prompt_WantToAddEmployee() {
     await inquirer
     .prompt(addEmployeeQuestions)
     .then(async answers => {
@@ -110,7 +110,7 @@ async function promptWantToAddEmployee() {
             }else {
                await promptIntern();
             }
-            await promptEmployee();
+            await prompt_WantToAddEmployee();
         }
     })
     .catch(error => {
@@ -158,7 +158,7 @@ async function init() {
     .then( async answers => {
         const manager = new Manager(answers.managerName,answers.managerId,answers.managerEmail, answers.managerNumber)
         employees.push(manager)
-        await promptEmployee();
+        await prompt_WantToAddEmployee();
     })
     .catch(error => {
         throw error;
