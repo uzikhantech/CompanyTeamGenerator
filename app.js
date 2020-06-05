@@ -164,7 +164,7 @@ async function init() {
         throw error;
     });
 
-    //sample data test
+    //sample data test data
     const softwareEngineer = new Engineer("uzi",2,'uzikhan1985@outlook.com','mariakhantech' );
     const softwareEngineer1 = new Engineer("uzi",2,'uzikhan1985@outlook.com','mariakhantech' );
     const softwareEngineer2= new Engineer("uzi",2,'uzikhan1985@outlook.com','mariakhantech' );
